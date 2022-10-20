@@ -9,7 +9,8 @@ function AppRouter(){
     let routes = useRoutes([
         {
             path: publicPath+'/',
-            element: <AllMeetUps/>
+            element: <AllMeetUps/>,
+            exact: true
         },
         {
             path: publicPath+'/new-meetup',
@@ -24,3 +25,6 @@ function AppRouter(){
 }
 
 export default AppRouter;
+
+// 需於 package.json 設定 homepage、build => et Create React App correctly infer the root path to use in the generated HTML file.
+// 設定 publicPath
