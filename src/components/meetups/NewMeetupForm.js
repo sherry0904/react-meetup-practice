@@ -11,6 +11,7 @@ function NewMeetupForm({onAddMeetup}) {
     
     function submitHandler(e){
         e.preventDefault();
+        let newDate = new Date();
 
         const enteredTitle = titleInputRef.current.value;
         const enteredImage = imageInputRef.current.value;
@@ -18,6 +19,7 @@ function NewMeetupForm({onAddMeetup}) {
         const enteredDescription = descriptionInputRef.current.value;
 
         const meetupData = {
+            key : newDate.getTime(),
             title: enteredTitle,
             image: enteredImage,
             address: enteredAddress,

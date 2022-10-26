@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import Header from './StyleMainNavigation'
 import styled from 'styled-components';
 
-const publicPath = '/creative/sherry/2022-reactPractice';
+const publicPath = '/creative/sherry/2022-reactPractice'; // BrowserRouter
+// const publicPath = ''; //HashRouter
 
 function MainNavigation({className}) {
     return (

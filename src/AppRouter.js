@@ -3,7 +3,8 @@ import AllMeetUps from "./page/AllMeetUps";
 import Favorites from "./page/Favorites";
 import NewMeetUp from "./page/NewMeetUp";
 
-const publicPath = '/creative/sherry/2022-reactPractice';
+const publicPath = '/creative/sherry/2022-reactPractice'; // BrowserRouter
+// const publicPath = ''; // HashRouter
 
 function AppRouter(){
     let routes = useRoutes([

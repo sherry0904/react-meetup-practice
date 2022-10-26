@@ -40,7 +40,6 @@ function AllMeetUps() {
                 Object.keys(data)
                 .map(key=>{
                     return (
-                        data[key].key = key,
                         data[key]
                     )
                 });

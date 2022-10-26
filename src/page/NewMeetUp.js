@@ -15,7 +15,7 @@ function NewMeetUp() {
       }
     })
     .then(res => {
-      navigate('/');
+      navigate('/creative/sherry/2022-reactPractice/');
     })
   }
 
