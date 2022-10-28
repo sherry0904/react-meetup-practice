@@ -13,3 +13,8 @@ function FooterButton() {
 }
 
 export default FooterButton
+
+// 利用useNavigate完成路由轉跳
+// 可直接傳入要跳轉的目標路由（可使用相對路徑）
+// 傳入 (-1) 表示後退
+// EX: navigate('/home', {replace: true});

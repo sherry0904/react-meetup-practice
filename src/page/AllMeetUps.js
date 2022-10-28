@@ -37,13 +37,8 @@ function AllMeetUps() {
         .then(data=>{
             // console.log(data)
             const meetups = 
-                Object.keys(data)
-                .map(key=>{
-                    return (
-                        data[key]
-                    )
-                });
-            console.log(meetups)
+                Object.keys( data ).map( key => data[key] );
+            // console.log(meetups)
             setIsLoading(false);
             setLoadedMeetups(meetups)
         })

@@ -1,6 +1,7 @@
 import classes from './Layout.module.scss'
 import MainNavigation from './MainNavigation'
 import FooterButton from "./FooterButton";
+// import moduleUse from './moduleUse.module.scss' 學習用module方法用
 
 function Layout(props) {
     return (

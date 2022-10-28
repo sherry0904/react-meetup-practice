@@ -1,0 +1,39 @@
+// composes 繼承其他 css 範例
+
+.text {
+    color: red;
+    font-size: 30px;
+}
+.bgc{
+    background-color: bisque; 
+    composes:text
+}
+
+// composes 也可以繼承其他檔案的 CSS
+
+.text {
+    color: red;
+    font-size: 30px;
+}
+.bgc {
+    background-color: bisque;
+    composes: main from "./Layout.module.scss";
+}
+
+// global 全域樣式（等同於一般 className 的寫法，不會增加後綴亂碼）
+
+:global(main) {
+    color: yellow;
+}
+
+// 使用變數需安裝 "PostCSS" & "postcss-modules-values"
+// npm install PostCSS
+// npm install postcss-modules-values
+@value colors: "./colors.module.scss";
+@value secondary from colors;
+.text {
+    color: rgb(253, 203, 174);
+    font-size: 30px;
+    padding: 20px;
+    background-color: secondary;
+}
